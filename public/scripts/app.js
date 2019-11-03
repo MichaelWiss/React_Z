@@ -1,12 +1,11 @@
-console.log('App.js is running')
+'use strict';
 
-	// var template = <p>This is jsx</p>;
+console.log('App.js is running');
 
-	// 
-	var template = React.createElement(
-		"h1",
-		{ id: "someid" },
-		"Something Else"
+var template = React.createElement(
+	'h1',
+	null,
+	'Indecision App'
 );
 var appRoute = document.getElementById('app');
 
