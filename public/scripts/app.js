@@ -31,23 +31,33 @@ var template = React.createElement(
 	)
 );
 
+var user = {
+	name: 'Michael',
+	age: 47,
+	location: 'Minnesota'
+};
+var userName = 'Charles';
+var userAge = 47;
+var userLocation = 'New York';
 var templateTwo = React.createElement(
 	'div',
 	null,
 	React.createElement(
 		'h1',
 		null,
-		'Michael W'
+		user.name
 	),
 	React.createElement(
 		'p',
 		null,
-		'Age:47'
+		'Age:',
+		user.age
 	),
 	React.createElement(
 		'p',
 		null,
-		'Location: Minnesota'
+		'Location: ',
+		user.location
 	)
 );
 var appRoute = document.getElementById('app');
