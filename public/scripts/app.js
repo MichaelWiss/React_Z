@@ -36,6 +36,10 @@ var user = {
 	age: 47,
 	location: 'Minnesota'
 };
+var book1 = {
+	author: 'Toni Morrison',
+	title: 'Sula'
+};
 var userName = 'Charles';
 var userAge = 47;
 var userLocation = 'New York';
@@ -58,6 +62,14 @@ var templateTwo = React.createElement(
 		null,
 		'Location: ',
 		user.location
+	),
+	React.createElement(
+		'p',
+		null,
+		'Reading List: ',
+		book1.title,
+		' by ',
+		book1.author
 	)
 );
 var appRoute = document.getElementById('app');
